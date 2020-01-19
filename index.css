@@ -1,0 +1,107 @@
+body {
+  background-color: #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-wrapper {
+  width: 768px;
+  height: 792px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.form-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0096c2;
+  height: 56px;
+  width: 768;
+  border-radius: 5px 5px 0 0;
+}
+
+.form-header-text {
+  color: #ffffff;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 736px;
+}
+
+.radio-buttons {
+  list-style-type: none;
+  margin: 25px 0 0 0;
+  padding: 0;
+}
+
+.radio-buttons li {
+  float: left;
+  margin: 0 5px 0 0;
+  width: 245px;
+  height: 44px;
+  position: relative;
+  border-color: #cccccc;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 3px;
+}
+
+.radio-buttons input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.radio-buttons input[type='radio'] {
+  opacity: 0.011;
+  z-index: 100;
+}
+
+.radio-buttons input[type='radio']:checked + label {
+  background: #e9faff;
+}
+
+.form-input {
+  width: 500px;
+  height: 44px;
+  outline: none;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  border-color: #cccccc;
+}
+
+.email-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.sms-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-label {
+  vertical-align: middle;
+}
+
+textarea {
+  outline: none;
+  height: 169px;
+  width: 500px;
+  border-radius: 3px;
+  border-color: #cccccc;
+  resize: none;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+}
