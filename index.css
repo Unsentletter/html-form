@@ -97,18 +97,24 @@ body {
 
 .grey-area {
   width: 20px;
-  height: 48px;
-  background-color: #c4c4c4;
+  height: 46px;
+  background-color: #f4f6f8;
   border-radius: 0 3px 3px 0;
+  border-width: 1px 1px 1px 0;
+  border-style: solid;
+  border-color: #cccccc;
   display: flex;
   justify-content: center;
 }
 
 .textarea-grey-area {
   width: 20px;
-  height: 175px;
-  background-color: #c4c4c4;
+  height: 173px;
+  background-color: #f4f6f8;
   border-radius: 0 3px 3px 0;
+  border-width: 1px 1px 1px 0;
+  border-style: solid;
+  border-color: #cccccc;
   display: flex;
   justify-content: center;
 }
