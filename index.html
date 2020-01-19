@@ -4,71 +4,105 @@
     <title></title>
     <link rel="stylesheet" href="index.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f647978db1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/form-validation.js"></script>
   </head>
   <body>
     <div class="form-wrapper">
       <div class="form-header">
         <div class="form-header-text">Jane Doe</div>
       </div>
-      <form class="form" id="form">
-        <ul class="radio-buttons" id="radio-buttons">
-          <li>
-            <input
-              type="radio"
-              id="email"
-              name="message-type"
-              value="email"
-              checked="true"
-            />
-            <label for="email" class="button-label">Email</label>
-          </li>
-          <li>
-            <input type="radio" id="sms" name="message-type" value="sms" />
-            <label for="sms" class="button-label">SMS</label>
-          </li>
-        </ul>
+      <form class="form" id="form" name="form">
+        <div class="send-message-title">Send Message</label>
+        <div class="message-type-buttons">
+          <div class="button" id="email-button">
+            <div class="button-text">Email</div>
+            <div class="button-icons">
+              <span class="cross" id="email-cross">
+                <i class="fas fa-times"></i>
+              </span>
+              <span class="tick" id="email-tick">
+                <i class="fas fa-check"></i>
+              </span>
+            </div>
+          </div>
+          <div class="button" id="sms-button">
+            <div class="button-text">
+              SMS
+            </div>
+            <div class="button-icons">
+              <span class="cross" id="sms-cross">
+                <i class="fas fa-times"></i>
+              </span>
+              <span class="tick" id="sms-tick">
+                <i class="fas fa-check"></i>
+              </span>
+            </div>
+          </div>
+        </div>
         <div class="email-details">
           <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Email Address"
-            class="form-input"
-          />
+          <div class="input-wrapper">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email Address"
+              class="form-input"
+            />
+            <div class="grey-area">
+              <div class="asterisk">*</div>
+            </div>
+          </div>
         </div>
         <div class="email-details">
           <label for="subject">Subject</label>
-          <input
-            type="text"
-            id="subject"
-            name="subject"
-            placeholder="Email Subject"
-            class="form-input"
-          />
+          <div class="input-wrapper">
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Email Subject"
+              class="form-input"
+            />
+            <div class="grey-area"><div class="asterisk">*</div></div>
+          </div>
         </div>
         <div class="sms-details">
           <label for="mobile-number">SMS</label>
-          <input
-            type="tel"
-            id="mobile-number"
-            name="mobile-number"
-            placeholder="Please enter your mobile number"
-            class="form-input"
-          />
+          <div class="input-wrapper">
+            <input
+              type="tel"
+              id="mobile-number"
+              name="mobile-number"
+              placeholder="Please enter your mobile number"
+              class="form-input"
+            />
+            <div class="grey-area"><div class="asterisk">*</div></div>
+          </div>
         </div>
         <div class="message">
           <label for="message">Message</label>
-          <textarea
-            id="message"
-            name="message"
-            placeholder="I need to work out how to toggle this message"
-          ></textarea>
+          <div class="input-wrapper">
+            <textarea
+              id="message"
+              name="message"
+              placeholder="I need to work out how to toggle this message"
+            ></textarea>
+            <div class="textarea-grey-area"><div class="asterisk">*</div></div>
+          </div>
         </div>
-        <div class="submit-button">
-          <button type="submit" id="submit">Send Email</button>
-        </div>
+        <button class="submit-button" type="submit">
+          <span class="submit-button-icon">
+            <i class="fas fa-envelope"></i>
+          </span>
+          Send Email
+        </button>
       </form>
     </div>
   </body>

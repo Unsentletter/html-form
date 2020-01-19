@@ -3,6 +3,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100vh;
 }
 
 .form-wrapper {
@@ -33,49 +34,88 @@ body {
   height: 736px;
 }
 
-.radio-buttons {
-  list-style-type: none;
-  margin: 25px 0 0 0;
-  padding: 0;
+.send-message-text {
 }
 
-.radio-buttons li {
-  float: left;
-  margin: 0 5px 0 0;
+.message-type-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   width: 245px;
   height: 44px;
-  position: relative;
   border-color: #cccccc;
   border-style: solid;
   border-width: 1px;
   border-radius: 3px;
 }
 
-.radio-buttons input {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+.button-icons {
+  padding-right: 20px;
 }
 
-.radio-buttons input[type='radio'] {
-  opacity: 0.011;
-  z-index: 100;
+.button-text {
+  padding-left: 20px;
 }
 
-.radio-buttons input[type='radio']:checked + label {
-  background: #e9faff;
+#email-button {
+  margin: 0 10px 0 0;
+}
+
+.tick {
+  color: #2aa43c;
+}
+
+.cross {
+  color: #cccccc;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: row;
 }
 
 .form-input {
-  width: 500px;
+  width: 480px;
   height: 44px;
   outline: none;
   border-width: 1px;
   border-style: solid;
-  border-radius: 3px;
+  border-radius: 3px 0 0 3px;
   border-color: #cccccc;
+}
+
+.hidden-input {
+  width: 500px;
+  display: none;
+}
+
+.grey-area {
+  width: 20px;
+  height: 48px;
+  background-color: #c4c4c4;
+  border-radius: 0 3px 3px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.textarea-grey-area {
+  width: 20px;
+  height: 175px;
+  background-color: #c4c4c4;
+  border-radius: 0 3px 3px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.asterisk {
+  padding-top: 5px;
+  color: #f83232;
 }
 
 .email-details {
@@ -88,15 +128,11 @@ body {
   flex-direction: column;
 }
 
-.button-label {
-  vertical-align: middle;
-}
-
 textarea {
   outline: none;
   height: 169px;
-  width: 500px;
-  border-radius: 3px;
+  width: 480px;
+  border-radius: 3px 0 0 3px;
   border-color: #cccccc;
   resize: none;
 }
@@ -104,4 +140,21 @@ textarea {
 .message {
   display: flex;
   flex-direction: column;
+}
+
+.submit-button {
+  background-color: #009fcc;
+  height: 44px;
+  width: 131px;
+  color: #ffffff;
+  border-radius: 3px;
+  border: none;
+}
+
+.submit-button[disabled] {
+  background-color: #c4c4c4;
+}
+
+.submit-icon-button {
+  color: #ffffff;
 }
